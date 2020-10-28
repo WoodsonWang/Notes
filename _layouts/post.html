@@ -1,71 +1,33 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "zh-cmn-Hans" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {% if page.title %}
-        {{ page.title }}
-      {% else %}
-        文章页
-      {% endif %}
-    </title>
+---
+layout: default
+---
 
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<head>
+  <link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}">
+</head>
 
-    {% include favicon.html %}
+<article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <img src="/images/calendar.png" width="20px"/> 
+      <time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time>  
 
-    <link rel="stylesheet" href="{{ "/assets/css/post.css" }}">
-    <link rel="stylesheet" href="{{ "/assets/css/prism.css" }}">
-    {% unless page.line_numbers != null and page.line_numbers == false %}
-    <link rel="stylesheet" href="{{ "/assets/css/prism-line-numbers.css" }}">
-    {% endunless %}
-    <link rel="stylesheet" href="{{ "/assets/css/markdown.css" }}">
-    {% seo %}
-    {% include statistics_head.html %}
-  </head>
+      <span id="busuanzi_container_page_pv"> | 阅读：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
+    </div>
+  </header>
 
-  <body>
-    <header>
-      {% include header_title.html %}
-      <p id="author" style="display: none">
-        {% if page.author %}
-        {{ page.author }}
-        {% elsif site.name %}
-        {{ site.name }}
-        {% endif %}
-      </p>
+  {% if site.enableToc %}
+    <h2 class="post-title">目录</h2>
+    {% include toc.html html=content %}
+  {% endif %}
 
-      <div class="article-title-description">
-        <p>发表于 {{ page.date | date: "%Y-%m-%d" }} | 本文共 {{ page.content | number_of_words }} 字</p>
-      </div>
-    </header>
+  <section class="post">
+    {{ content }}
+  </section>
 
-    {% include content.html %}
+</article>
 
-    {% include footer.html %}
-
-    <script src="{{ "/assets/js/prism.js" }}"></script>
-    <script src="{{ "/assets/js/zooming.min.js" }}"></script>
-    
-    {% unless page.line_numbers != null and page.line_numbers == false %}
-    <script src="{{ "/assets/js/prism-line-numbers.js" }}"></script>
-    {% endunless %}
-    <script src="{{ "/assets/js/post_content_init.js" }}"></script>
-
-    {% if site.lock_menu and site.lock_menu == true %}
-    <script src="{{ "/assets/js/lock_menu.js" }}"></script>
-    {% endif %}
-    {% if site.copy_with_declaration and site.copy_with_declaration == true %}
-    <script src="{{ "/assets/js/copy_with_declaration.js" }}"></script>
-    {% elsif site.lock_copy and site.lock_copy == true %}
-    <script src="{{ "/assets/js/lock_copy.js" }}"></script>
-    {% endif %}
-
-    {% include statistics_body.html %}
-  </body>
-</html>
+{% include new-old.html %}
+{% include comments.html %}

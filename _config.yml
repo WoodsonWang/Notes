@@ -6,7 +6,7 @@ description: 欢迎来到我的个人站~
 avatarTitle: leopardpan
 # 头像里面的描述
 avatarDesc: Java /  Python
-baseurl: "/Notes" 
+baseUrl: "/Notes" 
 url: "https://woodsonwang.github.io/Notes"
 
 # 博客是否自动生成目录，false为不生成

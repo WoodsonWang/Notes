@@ -1,7 +1,10 @@
 ---
-title: 通过githubpages搭建博客
+layout: post
+title: githubpages搭建博客
 categories: github
 ---
+
+
 
 # 使用git
 
@@ -13,7 +16,7 @@ https://git-scm.com/download/win
 
 打开git的控制台程序
 
-![image-20201027205553631]({{site.baseurl}}../blogimg/image-20201027205553631.png)
+![image-20201027205553631]({{site.baseurl}}/blogimg/image-20201027205553631.png)
 
 输入下面的命令进行配置
 
@@ -40,27 +43,27 @@ ssh-keygen -t rsa
 
 会在命令行的根目录下生成ssh文件夹
 
-<img src="{{site.baseurl}}../blogimg/image-20201027210214111.png" alt="image-20201027210214111" />
+<img src="{{site.baseurl}}/blogimg/image-20201027210214111.png" alt="image-20201027210214111" />
 
 ## 4. 将ssh中的公钥（id_rsa.pub）添加到github管理平台
 
 ### （1）创建新的ssh key
 
-<img src="{{site.baseurl}}../blogimg/image-20201027212403163.png" alt="image-20201027212403163" style="zoom:67%;" />
+<img src="{{site.baseurl}}/blogimg/image-20201027212403163.png" alt="image-20201027212403163" style="zoom:67%;" />
 
 
 
 
 
-![image-20201027212426042]({{site.baseurl}}../blogimg/image-20201027212426042.png)
+![image-20201027212426042]({{site.baseurl}}/blogimg/image-20201027212426042.png)
 
 
 
-![image-20201027212442972]({{site.baseurl}}../blogimg/image-20201027212442972.png)
+![image-20201027212442972]({{site.baseurl}}/blogimg/image-20201027212442972.png)
 
 ### （2）将公钥添加进来
 
-![image-20201027212637085]({{site.baseurl}}../blogimg/image-20201027212637085.png)
+![image-20201027212637085]({{site.baseurl}}/blogimg/image-20201027212637085.png)
 
 
 
@@ -74,7 +77,7 @@ ssh -T git@github.com
 
 配置成功
 
-![image-20201027213016144]({{site.baseurl}}../blogimg/image-20201027213016144.png)
+![image-20201027213016144]({{site.baseurl}}/blogimg/image-20201027213016144.png)
 
 
 
@@ -87,7 +90,7 @@ git init
 git status 查看目录下文件状态
 ```
 
-![image-20201027213939938]({{site.baseurl}}../blogimg/image-20201027213939938.png)
+![image-20201027213939938]({{site.baseurl}}/blogimg/image-20201027213939938.png)
 
 ## 2. 将项目的文件添加到待上传文件列表
 
@@ -100,7 +103,7 @@ git status
 
 红色的文件会变成绿色
 
-![image-20201027214240804]({{site.baseurl}}../blogimg/image-20201027214240804.png)
+![image-20201027214240804]({{site.baseurl}}/blogimg/image-20201027214240804.png)
 
 
 
@@ -114,7 +117,7 @@ git commit -m "添加描述"
 
 ## 5. 将本地仓库关联到github
 
-![image-20201027223200281]({{site.baseurl}}../blogimg/image-20201027223200281.png)
+![image-20201027223200281]({{site.baseurl}}/blogimg/image-20201027223200281.png)
 
 ```git
 git remote add origin git@github.com:WoodsonWang/Pyqt5.git
@@ -134,7 +137,7 @@ git push -u origin master
 
 
 
-![image-20201027224134442]({{site.baseurl}}../blogimg/image-20201027224134442.png)
+![image-20201027224134442]({{site.baseurl}}/blogimg/image-20201027224134442.png)
 
 
 
@@ -142,11 +145,11 @@ git push -u origin master
 
 
 
-![image-20201027224155740]({{site.baseurl}}../blogimg/image-20201027224155740.png)
+![image-20201027224155740]({{site.baseurl}}/blogimg/image-20201027224155740.png)
 
 会等待很久。。。。。。
 
-![image-20201027225606583]({{site.baseurl}}../blogimg/image-20201027225606583.png)
+![image-20201027225606583]({{site.baseurl}}/blogimg/image-20201027225606583.png)
 
 点击commit changes
 
@@ -162,7 +165,7 @@ https://woodsonwang.github.io/Notes/
 
 clone项目到本地
 
-![image-20201027230551483]({{site.baseurl}}../blogimg/image-20201027230551483.png)
+![image-20201027230551483]({{site.baseurl}}/blogimg/image-20201027230551483.png)
 
 ```git
 git clone git@github.com:WoodsonWang/Notes.git
@@ -201,7 +204,7 @@ jekyll serve 启动服务，通过端口访问网站
 
 
 
-![image-20201028005754837]({{site.baseurl}}../blogimg/image-20201028005754837.png)
+![image-20201028005754837]({{site.baseurl}}/blogimg/image-20201028005754837.png)
 
 
 
@@ -219,13 +222,13 @@ jekyll serve 启动服务，通过端口访问网站
 
 
 
-![image-20201028113619043]({{site.baseurl}}../blogimg/image-20201028113619043.png)
+![image-20201028113619043]({{site.baseurl}}/blogimg/image-20201028113619043.png)
 
 
 
 右键调出bash
 
-![image-20201028102741243]({{site.baseurl}}../blogimg/image-20201028102741243.png)
+![image-20201028102741243]({{site.baseurl}}/blogimg/image-20201028102741243.png)
 
 输入命令，启动服务
 
@@ -235,7 +238,7 @@ jekyll serve
 
 若出现下面的问题
 
-![image-20201028105831222]({{site.baseurl}}../blogimg/image-20201028105831222.png)
+![image-20201028105831222]({{site.baseurl}}/blogimg/image-20201028105831222.png)
 
 则输入命令
 
@@ -247,7 +250,7 @@ install完成之后，再启动服务
 
 若还出现下面的问题
 
-![image-20201028105927569]({{site.baseurl}}../blogimg/image-20201028105927569.png)
+![image-20201028105927569]({{site.baseurl}}/blogimg/image-20201028105927569.png)
 
 则要输入下面的命令启动服务
 
@@ -257,7 +260,7 @@ bundle exec jekyll serve
 
 服务启动成功
 
-![image-20201028110355316]({{site.baseurl}}../blogimg/image-20201028110355316.png)
+![image-20201028110355316]({{site.baseurl}}/blogimg/image-20201028110355316.png)
 
 这样网站就可以成功访问了
 
@@ -265,33 +268,33 @@ bundle exec jekyll serve
 
 路径问题
 
-![image-20201028142101131]({{site.baseurl}}../blogimg/image-20201028142101131.png)
+![image-20201028142101131]({{site.baseurl}}/blogimg/image-20201028142101131.png)
 
 从浏览器中访问地址时，需要带上子路径Notes，因为项目的名字为Notes
 
 修改_config.yml文件
 
-![image-20201028100440122]({{site.baseurl}}../blogimg/image-20201028100440122.png)
+![image-20201028100440122]({{site.baseurl}}/blogimg/image-20201028100440122.png)
 
-![image-20201031203847646]({{site.baseurl}}../blogimg/image-20201031203847646.png)
+![image-20201031203847646]({{site.baseurl}}/blogimg/image-20201031203847646.png)
 
 
 
 在notepad++ 中编辑文件，进行路径的替换
 
-![image-20201028142323258]({{site.baseurl}}../blogimg/image-20201028142323258.png)
+![image-20201028142323258]({{site.baseurl}}/blogimg/image-20201028142323258.png)
 
 
 
 ##  评论系统
 
-![image-20201028163825412]({{site.baseurl}}../blogimg/image-20201028163825412.png)
+![image-20201028163825412]({{site.baseurl}}/blogimg/image-20201028163825412.png)
 
 
 
 复制安装代码，替换掉comments.html 里section 标签中的代码即可使用了。
 
-<img src="{{site.baseurl}}../blogimg/image-20201028164113305.png" alt="image-20201028164113305" style="zoom:80%;" />
+<img src="{{site.baseurl}}/blogimg/image-20201028164113305.png" alt="image-20201028164113305" style="zoom:80%;" />
 
 
 

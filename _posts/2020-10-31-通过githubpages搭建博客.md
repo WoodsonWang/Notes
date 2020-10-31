@@ -1,32 +1,23 @@
----
-layout: post
-title: githubpages´î½¨²©¿Í
-categories: github
+# ä½¿ç”¨git
 
-tag: github
----
-
-
-# Ê¹ÓÃgit
-
-## 1. ÏÂÔØgit
+## 1. ä¸‹è½½git
 
 https://git-scm.com/download/win
 
-## 2. ÅäÖÃÕË»§
+## 2. é…ç½®è´¦æˆ·
 
-´ò¿ªgitµÄ¿ØÖÆÌ¨³ÌĞò
+æ‰“å¼€gitçš„æ§åˆ¶å°ç¨‹åº
 
 ![image-20201027205553631]({{site.baseurl}}/blogimg/image-20201027205553631.png)
 
-ÊäÈëÏÂÃæµÄÃüÁî½øĞĞÅäÖÃ
+è¾“å…¥ä¸‹é¢çš„å‘½ä»¤è¿›è¡Œé…ç½®
 
 ```git
-git config --global user.name "githubµÄÓÃ»§Ãû"
-git config --global user.email "githubµÄÓÊÏä"
+git config --global user.name "githubçš„ç”¨æˆ·å"
+git config --global user.email "githubçš„é‚®ç®±"
 ```
 
-Ê¹ÓÃÏÂÃæµÄÃüÁî²é¿´ÊÇ·ñÅäÖÃ³É¹¦
+ä½¿ç”¨ä¸‹é¢çš„å‘½ä»¤æŸ¥çœ‹æ˜¯å¦é…ç½®æˆåŠŸ
 
 ```git
 git cofig --global --list 
@@ -34,21 +25,21 @@ git cofig --global --list
 
 
 
-## 3. Éú³Éssh
+## 3. ç”Ÿæˆssh
 
 ```git
 ssh-keygen -t rsa
 ```
 
-È»ºóÒ»Â·»Ø³µ¼ü
+ç„¶åä¸€è·¯å›è½¦é”®
 
-»áÔÚÃüÁîĞĞµÄ¸ùÄ¿Â¼ÏÂÉú³ÉsshÎÄ¼ş¼Ğ
+ä¼šåœ¨å‘½ä»¤è¡Œçš„æ ¹ç›®å½•ä¸‹ç”Ÿæˆsshæ–‡ä»¶å¤¹
 
 <img src="{{site.baseurl}}/blogimg/image-20201027210214111.png" alt="image-20201027210214111" />
 
-## 4. ½«sshÖĞµÄ¹«Ô¿£¨id_rsa.pub£©Ìí¼Óµ½github¹ÜÀíÆ½Ì¨
+## 4. å°†sshä¸­çš„å…¬é’¥ï¼ˆid_rsa.pubï¼‰æ·»åŠ åˆ°githubç®¡ç†å¹³å°
 
-### £¨1£©´´½¨ĞÂµÄssh key
+### ï¼ˆ1ï¼‰åˆ›å»ºæ–°çš„ssh key
 
 <img src="{{site.baseurl}}/blogimg/image-20201027212403163.png" alt="image-20201027212403163" style="zoom:67%;" />
 
@@ -62,61 +53,61 @@ ssh-keygen -t rsa
 
 ![image-20201027212442972]({{site.baseurl}}/blogimg/image-20201027212442972.png)
 
-### £¨2£©½«¹«Ô¿Ìí¼Ó½øÀ´
+### ï¼ˆ2ï¼‰å°†å…¬é’¥æ·»åŠ è¿›æ¥
 
 ![image-20201027212637085]({{site.baseurl}}/blogimg/image-20201027212637085.png)
 
 
 
-## 5. ²âÊÔÊÇ·ñÅäÖÃ³É¹¦
+## 5. æµ‹è¯•æ˜¯å¦é…ç½®æˆåŠŸ
 
-ÊäÈëgitÃüÁî½øĞĞ²âÊÔ
+è¾“å…¥gitå‘½ä»¤è¿›è¡Œæµ‹è¯•
 
 ```git
 ssh -T git@github.com
 ```
 
-ÅäÖÃ³É¹¦
+é…ç½®æˆåŠŸ
 
 ![image-20201027213016144]({{site.baseurl}}/blogimg/image-20201027213016144.png)
 
 
 
-# ½«±¾µØ´úÂëÉÏ´«µ½github²Ö¿â
+# å°†æœ¬åœ°ä»£ç ä¸Šä¼ åˆ°githubä»“åº“
 
-## 1. ½¨Á¢git²Ö¿â
+## 1. å»ºç«‹gitä»“åº“
 
 ```git
 git init
-git status ²é¿´Ä¿Â¼ÏÂÎÄ¼ş×´Ì¬
+git status æŸ¥çœ‹ç›®å½•ä¸‹æ–‡ä»¶çŠ¶æ€
 ```
 
 ![image-20201027213939938]({{site.baseurl}}/blogimg/image-20201027213939938.png)
 
-## 2. ½«ÏîÄ¿µÄÎÄ¼şÌí¼Óµ½´ıÉÏ´«ÎÄ¼şÁĞ±í
+## 2. å°†é¡¹ç›®çš„æ–‡ä»¶æ·»åŠ åˆ°å¾…ä¸Šä¼ æ–‡ä»¶åˆ—è¡¨
 
 ```git
-git add --all  ½«ËùÓĞÎÄ¼şÌí¼Ó½ø´ıÉÏ´«ÎÄ¼şÁĞ±í  git add  ÎÄ¼şÃû Ìí¼Óµ¥¸öÎÄ¼ş
+git add --all  å°†æ‰€æœ‰æ–‡ä»¶æ·»åŠ è¿›å¾…ä¸Šä¼ æ–‡ä»¶åˆ—è¡¨  git add  æ–‡ä»¶å æ·»åŠ å•ä¸ªæ–‡ä»¶
 git status
 ```
 
 
 
-ºìÉ«µÄÎÄ¼ş»á±ä³ÉÂÌÉ«
+çº¢è‰²çš„æ–‡ä»¶ä¼šå˜æˆç»¿è‰²
 
 ![image-20201027214240804]({{site.baseurl}}/blogimg/image-20201027214240804.png)
 
 
 
-## 3. ½«addµÄÎÄ¼şcommitµ½²Ö¿â
+## 3. å°†addçš„æ–‡ä»¶commitåˆ°ä»“åº“
 
 ```git
-git commit -m "Ìí¼ÓÃèÊö"
+git commit -m "æ·»åŠ æè¿°"
 ```
 
-## 4. ÔÚgithubÉÏ´´½¨Ò»¸öĞÂµÄ²Ö¿â
+## 4. åœ¨githubä¸Šåˆ›å»ºä¸€ä¸ªæ–°çš„ä»“åº“
 
-## 5. ½«±¾µØ²Ö¿â¹ØÁªµ½github
+## 5. å°†æœ¬åœ°ä»“åº“å…³è”åˆ°github
 
 ![image-20201027223200281]({{site.baseurl}}/blogimg/image-20201027223200281.png)
 
@@ -124,7 +115,7 @@ git commit -m "Ìí¼ÓÃèÊö"
 git remote add origin git@github.com:WoodsonWang/Pyqt5.git
 ```
 
-## 6. ÉÏ´«´úÂëµ½github²Ö¿â
+## 6. ä¸Šä¼ ä»£ç åˆ°githubä»“åº“
 
 ```git
 git push -u origin master
@@ -132,9 +123,9 @@ git push -u origin master
 
 
 
-# Ê¹ÓÃgithub´´½¨²©¿Í
+# ä½¿ç”¨githubåˆ›å»ºåšå®¢
 
-## ½¨Á¢githubpages
+## å»ºç«‹githubpages
 
 
 
@@ -142,21 +133,21 @@ git push -u origin master
 
 
 
-Ñ¡ÔñÒ»¸öÖ÷Ìâ
+é€‰æ‹©ä¸€ä¸ªä¸»é¢˜
 
 
 
 ![image-20201027224155740]({{site.baseurl}}/blogimg/image-20201027224155740.png)
 
-»áµÈ´ıºÜ¾Ã¡£¡£¡£¡£¡£¡£
+ä¼šç­‰å¾…å¾ˆä¹…ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚
 
 ![image-20201027225606583]({{site.baseurl}}/blogimg/image-20201027225606583.png)
 
-µã»÷commit changes
+ç‚¹å‡»commit changes
 
-È»ºó¾Í¿ÉÒÔ·ÃÎÊ×Ô¼ºµÄÍøÒ³ÁË£¡£¡£¡ 
+ç„¶åå°±å¯ä»¥è®¿é—®è‡ªå·±çš„ç½‘é¡µäº†ï¼ï¼ï¼ 
 
-ÀıÈçÎÒ´´½¨µÄ¾²Ì¬ÍøÒ³·ÃÎÊµØÖ·ÈçÏÂ£º
+ä¾‹å¦‚æˆ‘åˆ›å»ºçš„é™æ€ç½‘é¡µè®¿é—®åœ°å€å¦‚ä¸‹ï¼š
 
 https://woodsonwang.github.io/Notes/
 
@@ -164,7 +155,7 @@ https://woodsonwang.github.io/Notes/
 
 
 
-cloneÏîÄ¿µ½±¾µØ
+cloneé¡¹ç›®åˆ°æœ¬åœ°
 
 ![image-20201027230551483]({{site.baseurl}}/blogimg/image-20201027230551483.png)
 
@@ -174,7 +165,7 @@ git clone git@github.com:WoodsonWang/Notes.git
 
 
 
-ĞŞ¸Ä²©¿ÍÖ÷ÌâµÄ·½·¨
+ä¿®æ”¹åšå®¢ä¸»é¢˜çš„æ–¹æ³•
 
 https://www.jianshu.com/p/418b5695e6ea
 
@@ -182,25 +173,25 @@ https://www.jianshu.com/p/418b5695e6ea
 
 
 
-##  Ê¹ÓÃjekyll
+##  ä½¿ç”¨jekyll
 
-### 1. °²×°Ruby
+### 1. å®‰è£…Ruby
 
-ÏÂÔØ°²×°exe£¬µØÖ·£ºhttp://rubyinstaller.org/downloads/
+ä¸‹è½½å®‰è£…exeï¼Œåœ°å€ï¼šhttp://rubyinstaller.org/downloads/
 
-### 2.  °²×°jekyll
+### 2.  å®‰è£…jekyll
 
-git bashÖĞÊäÈëÒ»ÏÂÃüÁî°²×°jekyll
+git bashä¸­è¾“å…¥ä¸€ä¸‹å‘½ä»¤å®‰è£…jekyll
 
 ```git
 gem install jekyll
 
-²âÊÔ°²×°ÊÇ·ñ³É¹¦
+æµ‹è¯•å®‰è£…æ˜¯å¦æˆåŠŸ
 jekyll -v
-´´½¨jekyllÏîÄ¿
+åˆ›å»ºjekyllé¡¹ç›®
 jekyll new myblog
 cd myblog
-jekyll serve Æô¶¯·şÎñ£¬Í¨¹ı¶Ë¿Ú·ÃÎÊÍøÕ¾
+jekyll serve å¯åŠ¨æœåŠ¡ï¼Œé€šè¿‡ç«¯å£è®¿é—®ç½‘ç«™
 ```
 
 
@@ -209,17 +200,17 @@ jekyll serve Æô¶¯·şÎñ£¬Í¨¹ı¶Ë¿Ú·ÃÎÊÍøÕ¾
 
 
 
-### 3. ĞŞ¸ÄÖ÷Ìâ
+### 3. ä¿®æ”¹ä¸»é¢˜
 
-Ö÷ÌâÏÂÔØ  http://jekyllthemes.org/
+ä¸»é¢˜ä¸‹è½½  http://jekyllthemes.org/
 
-±¾ÎÄÊ¹ÓÃµÄÄ£°å https://leopardpan.cn/
+æœ¬æ–‡ä½¿ç”¨çš„æ¨¡æ¿ https://leopardpan.cn/
 
-ÏÂÔØÒ»¸öÖ÷Ìâ
+ä¸‹è½½ä¸€ä¸ªä¸»é¢˜
 
 
 
-É¾³ıºìÏß±ê¼ÇµÄÎÄ¼ş
+åˆ é™¤çº¢çº¿æ ‡è®°çš„æ–‡ä»¶
 
 
 
@@ -227,53 +218,53 @@ jekyll serve Æô¶¯·şÎñ£¬Í¨¹ı¶Ë¿Ú·ÃÎÊÍøÕ¾
 
 
 
-ÓÒ¼üµ÷³öbash
+å³é”®è°ƒå‡ºbash
 
 ![image-20201028102741243]({{site.baseurl}}/blogimg/image-20201028102741243.png)
 
-ÊäÈëÃüÁî£¬Æô¶¯·şÎñ
+è¾“å…¥å‘½ä»¤ï¼Œå¯åŠ¨æœåŠ¡
 
 ```git
 jekyll serve
 ```
 
-Èô³öÏÖÏÂÃæµÄÎÊÌâ
+è‹¥å‡ºç°ä¸‹é¢çš„é—®é¢˜
 
 ![image-20201028105831222]({{site.baseurl}}/blogimg/image-20201028105831222.png)
 
-ÔòÊäÈëÃüÁî
+åˆ™è¾“å…¥å‘½ä»¤
 
 ```git
 bundle install
 ```
 
-installÍê³ÉÖ®ºó£¬ÔÙÆô¶¯·şÎñ
+installå®Œæˆä¹‹åï¼Œå†å¯åŠ¨æœåŠ¡
 
-Èô»¹³öÏÖÏÂÃæµÄÎÊÌâ
+è‹¥è¿˜å‡ºç°ä¸‹é¢çš„é—®é¢˜
 
 ![image-20201028105927569]({{site.baseurl}}/blogimg/image-20201028105927569.png)
 
-ÔòÒªÊäÈëÏÂÃæµÄÃüÁîÆô¶¯·şÎñ
+åˆ™è¦è¾“å…¥ä¸‹é¢çš„å‘½ä»¤å¯åŠ¨æœåŠ¡
 
 ```git
 bundle exec jekyll serve
 ```
 
-·şÎñÆô¶¯³É¹¦
+æœåŠ¡å¯åŠ¨æˆåŠŸ
 
 ![image-20201028110355316]({{site.baseurl}}/blogimg/image-20201028110355316.png)
 
-ÕâÑùÍøÕ¾¾Í¿ÉÒÔ³É¹¦·ÃÎÊÁË
+è¿™æ ·ç½‘ç«™å°±å¯ä»¥æˆåŠŸè®¿é—®äº†
 
 
 
-Â·¾¶ÎÊÌâ
+è·¯å¾„é—®é¢˜
 
 ![image-20201028142101131]({{site.baseurl}}/blogimg/image-20201028142101131.png)
 
-´Óä¯ÀÀÆ÷ÖĞ·ÃÎÊµØÖ·Ê±£¬ĞèÒª´øÉÏ×ÓÂ·¾¶Notes£¬ÒòÎªÏîÄ¿µÄÃû×ÖÎªNotes
+ä»æµè§ˆå™¨ä¸­è®¿é—®åœ°å€æ—¶ï¼Œéœ€è¦å¸¦ä¸Šå­è·¯å¾„Notesï¼Œå› ä¸ºé¡¹ç›®çš„åå­—ä¸ºNotes
 
-ĞŞ¸Ä_config.ymlÎÄ¼ş
+ä¿®æ”¹_config.ymlæ–‡ä»¶
 
 ![image-20201028100440122]({{site.baseurl}}/blogimg/image-20201028100440122.png)
 
@@ -281,40 +272,40 @@ bundle exec jekyll serve
 
 
 
-ÔÚnotepad++ ÖĞ±à¼­ÎÄ¼ş£¬½øĞĞÂ·¾¶µÄÌæ»»
+åœ¨notepad++ ä¸­ç¼–è¾‘æ–‡ä»¶ï¼Œè¿›è¡Œè·¯å¾„çš„æ›¿æ¢
 
 ![image-20201028142323258]({{site.baseurl}}/blogimg/image-20201028142323258.png)
 
 
 
-##  ÆÀÂÛÏµÍ³
+##  è¯„è®ºç³»ç»Ÿ
 
 ![image-20201028163825412]({{site.baseurl}}/blogimg/image-20201028163825412.png)
 
 
 
-¸´ÖÆ°²×°´úÂë£¬Ìæ»»µôcomments.html Àïsection ±êÇ©ÖĞµÄ´úÂë¼´¿ÉÊ¹ÓÃÁË¡£
+å¤åˆ¶å®‰è£…ä»£ç ï¼Œæ›¿æ¢æ‰comments.html é‡Œsection æ ‡ç­¾ä¸­çš„ä»£ç å³å¯ä½¿ç”¨äº†ã€‚
 
 <img src="{{site.baseurl}}/blogimg/image-20201028164113305.png" alt="image-20201028164113305" style="zoom:80%;" />
 
 
 
-## Ğ´blog
+## å†™blog
 
-ÔÚ_postsÎÄ¼ş¼ĞÏÂ½¨Á¢mdÎÄ¼ş
+åœ¨_postsæ–‡ä»¶å¤¹ä¸‹å»ºç«‹mdæ–‡ä»¶
 
-ÃüÃû¹æÔò '2020-11-11-ÎÄ¼şÃû.md'
+å‘½åè§„åˆ™ '2020-11-11-æ–‡ä»¶å.md'
 
-mdÎÄ¼şÍ·²¿ĞëÓĞÏÂÃæµÄÄÚÈİ
+mdæ–‡ä»¶å¤´éƒ¨é¡»æœ‰ä¸‹é¢çš„å†…å®¹
 
 ```markdown
 --- 
-title: postName #ÎÄÕÂÒ³ÃæÉÏµÄÏÔÊ¾Ãû³Æ£¬Ò»°ãÊÇÖĞÎÄ 
-date: 2013-12-02 15:30:16 #ÎÄÕÂÉú³ÉÊ±¼ä£¬Ò»°ã²»¸Ä£¬µ±È»Ò²¿ÉÒÔÈÎÒâĞŞ¸Ä 
-categories: Ä¬ÈÏ·ÖÀà #·ÖÀà 
-tags: [tag1,tag2,tag3] #ÎÄÕÂ±êÇ©£¬¿É¿Õ£¬¶à±êÇ©ÇëÓÃ¸ñÊ½£¬×¢Òâ:ºóÃæÓĞ¸ö¿Õ¸ñ 
-description: ¸½¼ÓÒ»¶ÎÎÄÕÂÕªÒª£¬×ÖÊı×îºÃÔÚ140×ÖÒÔÄÚ£¬»á³öÏÖÔÚmetaµÄdescriptionÀïÃæ ---
+title: postName #æ–‡ç« é¡µé¢ä¸Šçš„æ˜¾ç¤ºåç§°ï¼Œä¸€èˆ¬æ˜¯ä¸­æ–‡ 
+date: 2013-12-02 15:30:16 #æ–‡ç« ç”Ÿæˆæ—¶é—´ï¼Œä¸€èˆ¬ä¸æ”¹ï¼Œå½“ç„¶ä¹Ÿå¯ä»¥ä»»æ„ä¿®æ”¹ 
+categories: é»˜è®¤åˆ†ç±» #åˆ†ç±» 
+tags: [tag1,tag2,tag3] #æ–‡ç« æ ‡ç­¾ï¼Œå¯ç©ºï¼Œå¤šæ ‡ç­¾è¯·ç”¨æ ¼å¼ï¼Œæ³¨æ„:åé¢æœ‰ä¸ªç©ºæ ¼ 
+description: é™„åŠ ä¸€æ®µæ–‡ç« æ‘˜è¦ï¼Œå­—æ•°æœ€å¥½åœ¨140å­—ä»¥å†…ï¼Œä¼šå‡ºç°åœ¨metaçš„descriptioné‡Œé¢ ---
 ```
 
-½«ÏîÄ¿pushµ½github¾Í¿ÉÒÔ·ÃÎÊÁË
+å°†é¡¹ç›®pushåˆ°githubå°±å¯ä»¥è®¿é—®äº†
 

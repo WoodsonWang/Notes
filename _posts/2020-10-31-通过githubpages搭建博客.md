@@ -2,8 +2,9 @@
 layout: post
 title: githubpages搭建博客
 categories: github
----
 
+tag: github
+---
 
 
 # 使用git

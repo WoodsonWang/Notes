@@ -1,3 +1,12 @@
+---
+layout: post
+title: Windows使用
+
+description: windows使用
+
+tag: windows
+---   
+
 # 使用git
 
 ## 1. 下载git

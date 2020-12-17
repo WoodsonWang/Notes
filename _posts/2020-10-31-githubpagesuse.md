@@ -7,7 +7,7 @@ tag: github
 description: githubpages使用
 
 tag: windows
----   
+​---   
 
 # 使用git
 
@@ -31,12 +31,14 @@ git config --global user.email "github的邮箱"
 使用下面的命令查看是否配置成功
 
 ```git
-git cofig --global --list 
+git config --global --list 
 ```
 
 
 
 ## 3. 生成ssh
+
+在windows中，如果报ssh-keygen命令找不到，去文件夹C:\Program Files\Git\usr\bin中找。
 
 ```git
 ssh-keygen -t rsa
@@ -324,3 +326,5 @@ description: 附加一段文章摘要，字数最好在140字以内，会出现�
 
 将项目push到github就可以访问了
 
+
+```
